@@ -25,8 +25,8 @@
 <body>
 
 
-<div id="header-wrap">
-	
+<div id="header-wrap" style="position: fixed;z-index: 999;background: var(--light-color);width: 100%;">
+
 	<div class="top-content">
 		<div class="container">
 			<div class="row">
@@ -63,7 +63,7 @@
 							</div>
 						</div>
 
-                        <a href="#" class="user-account for-buy"><i class="icon icon-user"></i><span>Account</span></a>
+						<a href="#" class="user-account for-buy"><i class="icon icon-user"></i><span>Account</span></a>
 					</div><!--top-right-->
 				</div>
 				
@@ -77,7 +77,7 @@
 
 				<div class="col-md-2">
 					<div class="main-logo">
-						<a href="index.html"><img src="img/websitename.png" alt="logo"></a>
+						<a href="index.html"><img src="img/websitename.png" alt="logo" style="height: 2rem;"></a>
 					</div>
 
 				</div>
@@ -102,10 +102,10 @@
 							</ul>
 
 							<div class="hamburger">
-				                <span class="bar"></span>
-				                <span class="bar"></span>
-				                <span class="bar"></span>
-				            </div>
+								<span class="bar"></span>
+								<span class="bar"></span>
+								<span class="bar"></span>
+							</div>
 
 						</div>
 					</nav>
@@ -118,7 +118,7 @@
 		
 </div><!--header-wrap-->
 
-<section>
+<section style="top: 5rem;position: relative;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -137,22 +137,38 @@
 
 		<div class="row">
 
-			<div class="col-md-6">
+			<div class="col-md-6" style="text-align-last: center;">
 				<a href="#" class="product-image"><img src="img/bamboo1.JPG" style="width: 413px;height: 602px;"></a>
 			</div>
 
 			<div class="col-md-6 pl-5">
 				<div class="product-detail">
 					<h2 class="section-title divider">Dendrocalamus giganteus</h2>
-					<p>Dendrocalamus giganteus, commonly known as giant bamboo, is a giant tropical and subtropical, dense-clumping species native to Southeast Asia. It is one of the largest bamboo species in the world.</p>
+					<span>english / scientific name</span>
+					<div class="item-price">$ 45.00 <span>FOR SALE</span></div>
+					<h3>Horticultural Uses</h3>
+					<ul>
+						<li>Privacy Screening</li>
+						<li>Hedging</li>
+						<li>Ornamental / Feature</li>
+					</ul>
+					<h3>Bamboo Description</h3>
+					<p>Dendrocalamus giganteus, commonly known as giant bamboo, is a giant tropical and subtropical, dense-clumping species native to Southeast Asia. It is one of the largest bamboo species in the world.A very tall, large-culmed, grayish-green bamboo, it grows in clumps consisting of a large number of closely growing culms, and typically reaches a height of 30 meters (98 feet), but one clump in Arunachal Pradesh, India reached a height of 42 meters. Under favorable conditions, it can grow up to 40 cm per day. The record for the species, 18 inches (46 centimeters) in 24 hours, was set on July 29-30 of 1903 at Peradeniya Royal Botanical Gardens in Ceylon (Sri Lanka). In subtropical climates, it does not grow as tall, struggling to grow to 20 meters.</p>
 
-					<p>
-						A very tall, large-culmed, grayish-green bamboo, it grows in clumps consisting of a large number of closely growing culms, and typically reaches a height of 30 meters (98 feet), but one clump in Arunachal Pradesh, India reached a height of 42 meters. Under favorable conditions, it can grow up to 40 cm per day. The record for the species, 18 inches (46 centimeters) in 24 hours, was set on July 29-30 of 1903 at Peradeniya Royal Botanical Gardens in Ceylon (Sri Lanka).[4] In subtropical climates, it does not grow as tall, struggling to grow to 20 meters.[5]
-					</p>
-					<p>
-						Culms are straight and grayish green with a powdery appearance, becoming brownish green on drying, with a smooth surface. Young shoots are blackish purple. Internode length is 25–40 cm, and diameter is 10–35 cm. Culm walls are thin, branching only at the top. Aerial roots occur up to the eighth node. The rootstock is stout.
-					</p>
-
+					<div class="row">
+						<div class="col-md-6">
+							<ul>
+								<li>Typical Height:</li>
+								<li>Typical Stem Size:</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<ul>
+								<li>Recommended Plant Spacing:</li>
+								<li>Min Temperature:</li>
+							</ul>
+						</div>
+					</div>
 					<a href="index.html" class="btn btn-accent">Back</a>
                     <a href="#" class="btn btn-accent">Get Directions</a>
 					
@@ -163,8 +179,9 @@
 	</div>
 </section>
 
-<section id="bamboo-list" class="bookshelf">
+<section id="bamboo-list" class="bookshelf" style="margin-top: 2em;">
 	<div class="container">
+		<h1 style="text-align: center;">Some of this Bamboo's Products</h1>
 	<div class="row">
 		<div class="col-md-12">
 
@@ -172,110 +189,99 @@
 			  <div id="all" data-tab-content class="active">
 			  	<div class="row">
 
-				  	<div class="col-md-4">
-					  	<figure class="product-style">
-							<img src="img/bamboo1.JPG" alt="Books" class="product-item" style="height: 539px;">
+				  	<div class="col-md-3">
+					  	<figure class="product-style-finder">
+							<img src="img/bamboo1.JPG" alt="Books" class="product-item" style="height: 29em;width: 20em;">
 							<figcaption>
-								<h3>Bangko ni Jesrhylle</h3>
-								<div class="item-price">$ 45.00</div>
+								<h3>Product Name ex. Bamboo Hat</h3>
+								<div class="item-price">From $45.00</div>
 							</figcaption>
 						</figure>
 					</div>
 
-					<div class="col-md-4">
-						<figure class="product-style">
-							<img src="img/bamboo2.jpg" alt="Books" class="product-item">
+                    <div class="col-md-3">
+                        <figure class="product-style-finder">
+                          <img src="img/bamboo1.JPG" alt="Books" class="product-item" style="height: 29em;width: 20em;">
+						  <figcaption>
+							<h3>Product Name ex. Bamboo Duyan</h3>
+							<div class="item-price">From $45.00</div>
+						</figcaption>
+                      </figure>
+                  </div>
+
+					<div class="col-md-3">
+						<figure class="product-style-finder">
+							<img src="img/bamboo2.jpg" alt="Books" class="product-item" style="height: 29em;width: 20em;">
 							<figcaption>
-								<h3>Name: Bambusa vulgaris</h3>
-								<p>Type: Clumper</p>
-								<a href="#" class="btn btn-outline-accent btn-pill">View More</a>
+								<h3>Product Name ex. Bamboo Chair</h3>
+								<div class="item-price">From $45.00</div>
 							</figcaption>
 					  	</figure>
 				  	</div>
 
-					<div class="col-md-4">
-						<figure class="product-style">
-							<img src="img/bamboo3.jpg" alt="Books" class="product-item">
+					<div class="col-md-3">
+						<figure class="product-style-finder">
+							<img src="img/bamboo3.jpg" alt="Books" class="product-item" style="height: 29em;width: 20em;">
 							<figcaption>
-								<h3>Name: Bambusa vulgaris Vitata</h3>
-								<p>Type: </p>
-								<a href="#" class="btn btn-outline-accent btn-pill">View More</a>
+								<h3>Product Name ex. Bamboo Hat</h3>
+								<div class="item-price">From $45.00</div>
 							</figcaption>
 					  	</figure>
 				  	</div>
 
 				</div>
-				<div class="row">
-
-					<div class="col-md-4">
-						<figure class="product-style">
-							<img src="img/bamboo4.jpg" alt="Books" class="product-item">
-							<figcaption>
-								<h3>Name: Acidosasa edulis</h3>
-								<p>Type: Runner</p>
-								<a href="#" class="btn btn-outline-accent btn-pill">View More</a>
-							</figcaption>
-					  	</figure>
-				  	</div>
-
-					<div class="col-md-4">
-						<figure class="product-style">
-							<img src="img/bamboo5.jpg" alt="Books" class="product-item">
-							<figcaption>
-								<h3>Name: Acidosasa chienouensis</h3>
-								<p>Type: Runner</p>
-								<a href="#" class="btn btn-outline-accent btn-pill">View More</a>
-							</figcaption>
-					  	</figure>
-				  	</div>
-
-					<div class="col-md-4">
-						<figure class="product-style">
-							<img src="img/bamboo6.jpg" alt="Books" class="product-item">
-							<figcaption>
-								<h3>Name: Chimonobambusa tumidissinoda</h3>
-								<p>Type: Runner</p>
-								<a href="#" class="btn btn-outline-accent btn-pill">View More</a>
-							</figcaption>
-					  	</figure>
-				  	</div>
-
-		    	</div>
-
 			  </div>
 
 			  <div id="ZDN" data-tab-content>
 			  	<div class="row">
 					<div class="col-md-4">
-						<figure class="product-style">
-						  <img src="img/bamboo1.JPG" alt="Books" class="product-item" style="height: 539px;">
-						  <figcaption>
-							  <h3>Name: Dendrocalamus giganteus</h3>
-							  <p>Type: Clumper</p>
-							  <a href="#" class="btn btn-outline-accent btn-pill">View More</a>
-						  </figcaption>
+						<figure class="product-style-finder">
+						  <img src="img/bamboo1.JPG" alt="Books" class="product-item" style="height: 29em;width: 20em;">
+                          <figcaption>
+                            <h3>Product Name</h3>
+                            <p>english / scientific name</p>
+                            <ul style="margin-top: -2em;">
+                                <li>Typical height: 3-4cm</li>
+                                <li>Typical Stem Size: 3-4cm</li>
+                                <li>Min Temperature: -2°C</li>
+                                <li>Recommended Plant Spacing: 1-1.5m</li>
+                            </ul>
+                            <div class="item-price" style="margin-top: -1em;">From $45.00</div>
+                        </figcaption>
 					  </figure>
 				  </div>
 
 				  <div class="col-md-4">
-					  <figure class="product-style">
-						  <img src="img/bamboo2.jpg" alt="Books" class="product-item">
-						  <figcaption>
-							  <h3>Name: Bambusa vulgaris</h3>
-							  <p>Type: Clumper</p>
-							  <a href="#" class="btn btn-outline-accent btn-pill">View More</a>
-						  </figcaption>
+					  <figure class="product-style-finder">
+						  <img src="img/bamboo2.jpg" alt="Books" class="product-item" style="height: 29em;width: 20em;">
+                          <figcaption>
+                            <h3>localname</h3>
+                            <p>english / scientific name</p>
+                            <ul style="margin-top: -2em;">
+                                <li>Typical height: 3-4cm</li>
+                                <li>Typical Stem Size: 3-4cm</li>
+                                <li>Min Temperature: -2°C</li>
+                                <li>Recommended Plant Spacing: 1-1.5m</li>
+                            </ul>
+                            <div class="item-price" style="margin-top: -1em;">From $45.00</div>
+                        </figcaption>
 						</figure>
 					</div>
 
 				  <div class="col-md-4">
-					  <figure class="product-style">
-						  <img src="img/bamboo3.jpg" alt="Books" class="product-item">
-						  <figcaption>
-							  <h3>Name: Bambusa vulgaris Vitata</h3>
-							  <p>Type: </p>
-							  <a href="#" class="btn btn-outline-accent btn-pill">View More</a>
-						  </figcaption>
+					  <figure class="product-style-finder">
+						  <img src="img/bamboo3.jpg" alt="Books" class="product-item" style="height: 29em;width: 20em;">
+                          <figcaption>
+                            <h3>localname</h3>
+                            <p>english / scientific name</p>
+                            <ul style="margin-top: -2em;">
+                                <li>Typical height: 3-4cm</li>
+                                <li>Typical Stem Size: 3-4cm</li>
+                                <li>Min Temperature: -2°C</li>
+                                <li>Recommended Plant Spacing: 1-1.5m</li>
+                            </ul>
+                            <div class="item-price" style="margin-top: -1em;">From $45.00</div>
+                        </figcaption>
 						</figure>
 				  </div>
 
@@ -285,34 +291,52 @@
 			  <div id="ZS" data-tab-content>
 			  	<div class="row">
 					<div class="col-md-4">
-						<figure class="product-style">
-							<img src="img/bamboo4.jpg" alt="Books" class="product-item">
-							<figcaption>
-								<h3>Name: Acidosasa edulis</h3>
-								<p>Type: Runner</p>
-								<a href="#" class="btn btn-outline-accent btn-pill">View More</a>
+						<figure class="product-style-finder">
+							<img src="img/bamboo4.jpg" alt="Books" class="product-item" style="height: 29em;width: 20em;">
+                            <figcaption>
+								<h3>localname</h3>
+                                <p>english / scientific name</p>
+                                <ul style="margin-top: -2em;">
+                                    <li>Typical height: 3-4cm</li>
+                                    <li>Typical Stem Size: 3-4cm</li>
+                                    <li>Min Temperature: -2°C</li>
+                                    <li>Recommended Plant Spacing: 1-1.5m</li>
+                                </ul>
+								<div class="item-price" style="margin-top: -1em;">From $45.00</div>
 							</figcaption>
 					  	</figure>
 				  	</div>
 
 					<div class="col-md-4">
-						<figure class="product-style">
-							<img src="img/bamboo5.jpg" alt="Books" class="product-item">
-							<figcaption>
-								<h3>Name: Acidosasa chienouensis</h3>
-								<p>Type: Runner</p>
-								<a href="#" class="btn btn-outline-accent btn-pill">View More</a>
+						<figure class="product-style-finder">
+							<img src="img/bamboo5.jpg" alt="Books" class="product-item" style="height: 29em;width: 20em;">
+                            <figcaption>
+								<h3>localname</h3>
+                                <p>english / scientific name</p>
+                                <ul style="margin-top: -2em;">
+                                    <li>Typical height: 3-4cm</li>
+                                    <li>Typical Stem Size: 3-4cm</li>
+                                    <li>Min Temperature: -2°C</li>
+                                    <li>Recommended Plant Spacing: 1-1.5m</li>
+                                </ul>
+								<div class="item-price" style="margin-top: -1em;">From $45.00</div>
 							</figcaption>
 					  	</figure>
 				  	</div>
 
 					<div class="col-md-4">
-						<figure class="product-style">
-							<img src="img/bamboo6.jpg" alt="Books" class="product-item">
-							<figcaption>
-								<h3>Name: Chimonobambusa tumidissinoda</h3>
-								<p>Type: Runner</p>
-								<a href="#" class="btn btn-outline-accent btn-pill">View More</a>
+						<figure class="product-style-finder">
+							<img src="img/bamboo6.jpg" alt="Books" class="product-item" style="height: 29em;width: 20em;">
+                            <figcaption>
+								<h3>localname</h3>
+                                <p>english / scientific name</p>
+                                <ul style="margin-top: -2em;">
+                                    <li>Typical height: 3-4cm</li>
+                                    <li>Typical Stem Size: 3-4cm</li>
+                                    <li>Min Temperature: -2°C</li>
+                                    <li>Recommended Plant Spacing: 1-1.5m</li>
+                                </ul>
+								<div class="item-price" style="margin-top: -1em;">From $45.00</div>
 							</figcaption>
 					  	</figure>
 				  	</div>
@@ -322,35 +346,70 @@
 			  <div id="ZDS" data-tab-content>
 			  	<div class="row">
 
-					<div class="col-md-4">
-						<figure class="product-style">
-						  <img src="img/bamboo1.JPG" alt="Books" class="product-item" style="height: 539px;">
-						  <figcaption>
-							  <h3>Name: Dendrocalamus giganteus</h3>
-							  <p>Type: Clumper</p>
-							  <a href="#" class="btn btn-outline-accent btn-pill">View More</a>
-						  </figcaption>
+					<div class="col-md-3">
+						<figure class="product-style-finder">
+						  <img src="img/bamboo1.JPG" alt="Books" class="product-item" style="height: 29em;width: 20em;">
+                          <figcaption>
+                            <h3>localname</h3>
+                            <p>english / scientific name</p>
+                            <ul style="margin-top: -2em;">
+                                <li>Typical height: 3-4cm</li>
+                                <li>Typical Stem Size: 3-4cm</li>
+                                <li>Min Temperature: -2°C</li>
+                                <li>Recommended Plant Spacing: 1-1.5m</li>
+                            </ul>
+                            <div class="item-price" style="margin-top: -1em;">From $45.00</div>
+                        </figcaption>
 					  </figure>
 				    </div>
 
-					<div class="col-md-4">
-						<figure class="product-style">
-							<img src="img/bamboo5.jpg" alt="Books" class="product-item">
-							<figcaption>
-								<h3>Name: Acidosasa chienouensis</h3>
-								<p>Type: Runner</p>
-								<a href="#" class="btn btn-outline-accent btn-pill">View More</a>
+					<div class="col-md-3">
+						<figure class="product-style-finder">
+							<img src="img/bamboo5.jpg" alt="Books" class="product-item" style="height: 29em;width: 20em;">
+                            <figcaption>
+								<h3>localname</h3>
+                                <p>english / scientific name</p>
+                                <ul style="margin-top: -2em;">
+                                    <li>Typical height: 3-4cm</li>
+                                    <li>Typical Stem Size: 3-4cm</li>
+                                    <li>Min Temperature: -2°C</li>
+                                    <li>Recommended Plant Spacing: 1-1.5m</li>
+                                </ul>
+								<div class="item-price" style="margin-top: -1em;">From $45.00</div>
 							</figcaption>
 					  	</figure>
 				  	</div>
 
-					<div class="col-md-4">
-						<figure class="product-style">
-							<img src="img/bamboo6.jpg" alt="Books" class="product-item">
-							<figcaption>
-								<h3>Name: Chimonobambusa tumidissinoda</h3>
-								<p>Type: Runner</p>
-								<a href="#" class="btn btn-outline-accent btn-pill">View More</a>
+					<div class="col-md-3">
+						<figure class="product-style-finder">
+							<img src="img/bamboo6.jpg" alt="Books" class="product-item" style="height: 29em;width: 20em;">
+                            <figcaption>
+								<h3>localname</h3>
+                                <p>english / scientific name</p>
+                                <ul style="margin-top: -2em;">
+                                    <li>Typical height: 3-4cm</li>
+                                    <li>Typical Stem Size: 3-4cm</li>
+                                    <li>Min Temperature: -2°C</li>
+                                    <li>Recommended Plant Spacing: 1-1.5m</li>
+                                </ul>
+								<div class="item-price" style="margin-top: -1em;">From $45.00</div>
+							</figcaption>
+					  	</figure>
+				  	</div>
+
+                    <div class="col-md-3">
+						<figure class="product-style-finder">
+							<img src="img/bamboo8.jpg" alt="Books" class="product-item" style="height: 29em;width: 20em;">
+                            <figcaption>
+								<h3>localname</h3>
+                                <p>english / scientific name</p>
+                                <ul style="margin-top: -2em;">
+                                    <li>Typical height: 3-4cm</li>
+                                    <li>Typical Stem Size: 3-4cm</li>
+                                    <li>Min Temperature: -2°C</li>
+                                    <li>Recommended Plant Spacing: 1-1.5m</li>
+                                </ul>
+								<div class="item-price" style="margin-top: -1em;">From $45.00</div>
 							</figcaption>
 					  	</figure>
 				  	</div>

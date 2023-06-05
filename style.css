@@ -932,7 +932,7 @@ This is main CSS file that contains custom style rules used in this template
   padding-bottom: 4em;
 }
 .padding-large {
-  padding-top: 2em;
+  padding-top: 7em;
   padding-bottom: 7em;
 }
 .padding-xlarge {
@@ -1112,7 +1112,6 @@ button {
     font-weight: 500;
     line-height: 1;
     position: relative;
-    margin-bottom: 75px;
 }
 .section-title.divider {
     width: 100%;
@@ -1848,6 +1847,11 @@ footer#footer {
 }
 
 .product-style-finder .item-price {
+  color: #74642F;
+  font-size: 1.3em;
+}
+
+.product-detail .item-price {
   color: #74642F;
   font-size: 1.3em;
 }
