@@ -31,11 +31,11 @@ Version: 1.1
 :root {
     --accent-color       : forestgreen ;
     --secondary-color    : indianred;
-    --dark-color         : #2f2f2f;
-    --light-color        : #F3F2EC;
-    --body-text-color    :black  ;
+    --dark-color         : #030303;
+    --light-color        : white;
+    --body-text-color    : black  ;
     --light-text-color   : #afafaf;
-    --dark-text-color    : #2f2f2f;
+    --dark-text-color    : #000000;
 }
 /* Fonts */
 :root {
@@ -596,13 +596,11 @@ fieldset[disabled] a.btn {
   color: #fff;
 }
 .btn.btn-outline-accent {
-  background: transparent;
-  border-color: var(--accent-color);
-  color: var(--accent-color);
+  background: WHITE;
+  color: var(--dark-color);
 }
 .btn.btn-outline-accent:hover {
-  border-color: var(--dark-color);
-  color: var(--dark-color) !important;
+  border-color: var(--accent-color);
 }
 .btn.btn-outline-light {
   background: transparent;
@@ -1329,9 +1327,10 @@ img.post-image {
     justify-content: center;
 }
 .main-slider .banner-content {
-    width: 35%;
-    margin-top: 90px;
-    margin-right: 175px;
+    width: auto;
+    margin-top: 190px;
+
+    text-align: center;
 }
 .banner-content h2.banner-title {
     font-size: 4.5em;
@@ -1744,8 +1743,9 @@ footer#footer {
     margin-right: 100px;
 }
 #footer .footer-item img.footer-logo {
-    margin-bottom: 40px;
-}
+    margin-bottom: -10px;
+    margin-left: -85%;
+} 
 #footer .footer-item p {
     width: 80%;
 }
@@ -1848,13 +1848,13 @@ footer#footer {
   margin: 0;
 }
 
-.product-style-finder .item-price {
-  color: indianred;
+.product-style-finder .item-located {
+  color: black;
   font-size: 1.3em;
 }
 
 .product-detail .item-price {
-  color: #74642F;
+  color: #74642F; 
   font-size: 1.3em;
 }
 .product-style figcaption>h3 {
@@ -1868,7 +1868,7 @@ footer#footer {
     font-size: 1.3em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {r
   .products-grid .product-style {
     width: 45%;
   }
@@ -1891,4 +1891,12 @@ footer#footer {
 
 #billboard{
   background: url(img/bamboo-for-bg.jpg);
+  height: 50em;
+}
+.company-brand .logo-desc{
+  margin-left: -60%;
+}
+
+.item{
+  color: #838383;
 }
