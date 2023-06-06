@@ -29,11 +29,11 @@ Version: 1.1
 }
 /* Theme Colors */
 :root {
-    --accent-color       : #C5A992;
-    --secondary-color    : #C5A992;
+    --accent-color       : forestgreen ;
+    --secondary-color    : indianred;
     --dark-color         : #2f2f2f;
     --light-color        : #F3F2EC;
-    --body-text-color    : #757575;
+    --body-text-color    :black  ;
     --light-text-color   : #afafaf;
     --dark-text-color    : #2f2f2f;
 }
@@ -89,7 +89,7 @@ ul li, ol li {
   outline: 0;
 }
 ul li.active a{
-  color: #daa556;
+  color:forestgreen;
 }
 ul li:last-child,
 ol li:last-child {
@@ -1849,7 +1849,7 @@ footer#footer {
 }
 
 .product-style-finder .item-price {
-  color: #74642F;
+  color: indianred;
   font-size: 1.3em;
 }
 
