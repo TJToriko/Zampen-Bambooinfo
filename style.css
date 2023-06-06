@@ -1747,7 +1747,7 @@ footer#footer {
     margin-left: -85%;
 } 
 #footer .footer-item p {
-    width: 80%;
+    width: 80%; 
 }
 #footer .footer-menu {
     margin-right: 40px;
@@ -1868,7 +1868,7 @@ footer#footer {
     font-size: 1.3em;
 }
 
-@media screen and (max-width: 768px) {r
+@media screen and (max-width: 768px) {r.slick-dots li
   .products-grid .product-style {
     width: 45%;
   }
@@ -1890,7 +1890,7 @@ footer#footer {
 }
 
 #billboard{
-  background: url(img/bamboo-for-bg.jpg);
+  background: url(img/bamboo-for-bg.jpg); 
   height: 50em;
 }
 .company-brand .logo-desc{

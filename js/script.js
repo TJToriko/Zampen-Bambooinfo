@@ -92,7 +92,7 @@
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: false,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         dots: true,
         arrows: false,
         responsive: [
