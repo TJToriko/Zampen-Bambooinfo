@@ -1308,7 +1308,7 @@ img.post-image {
   .tab-items{
     text-align-last: center;
   }
-  #billboard{
+  .billboard-add-css{
     display: flow-root;
     position: relative;
     top: 12em;
@@ -1900,3 +1900,4 @@ footer#footer {
 #billboard{
   background: url(img/bamboo-for-bg.jpg);
 }
+
