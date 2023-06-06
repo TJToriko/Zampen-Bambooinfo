@@ -1305,6 +1305,17 @@ img.post-image {
     margin-top: 20px;
     width: 100%;
   }
+  .tab-items{
+    text-align-last: center;
+  }
+  #billboard{
+    display: flow-root;
+    position: relative;
+    top: 12em;
+  }
+  #popular-books{
+    margin-top: 16em;
+  }
 }
 
 /* - Main Navigation
