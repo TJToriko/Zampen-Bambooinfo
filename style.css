@@ -28,13 +28,12 @@ Version: 1.1
     }
 }
 /* Theme Colors */
-
 :root {
-    --accent-color       : forestgreen;
-    --secondary-color    : indianred;
+    --accent-color       : #C5A992;
+    --secondary-color    : #C5A992;
     --dark-color         : #2f2f2f;
-    --light-color        : white;
-    --body-text-color    : black;
+    --light-color        : #F3F2EC;
+    --body-text-color    : #757575;
     --light-text-color   : #afafaf;
     --dark-text-color    : #2f2f2f;
 }
@@ -77,7 +76,7 @@ ul, ol {
   margin-top: 0;
   margin-bottom: 10px;
   margin-left: 0;
-} 
+}
 ul ul,
 ol ul,
 ul ol,
@@ -90,7 +89,7 @@ ul li, ol li {
   outline: 0;
 }
 ul li.active a{
-  color: forestgreen;
+  color: #daa556;
 }
 ul li:last-child,
 ol li:last-child {
@@ -1470,7 +1469,7 @@ img.post-image {
 }
 #best-selling .product-entry .item-price {
     font-size: 1.5em;
-    color: indianred;
+    color: #74642F;
     margin-bottom: 40px;
 }
 @media screen and (max-width: 768px) {
@@ -1853,14 +1852,14 @@ footer#footer {
 .product-style-finder figcaption>h3 {
   font-size: 1.4em;
   font-weight: 500;
-  color: black;
+  color: #74642F;
   margin: 0;
 }
 
 .product-style-finder .item-price {
-  color: indianred;
+  color: #74642F;
   font-size: 1.3em;
-} 
+}
 
 .product-detail .item-price {
   color: #74642F;
