@@ -933,7 +933,6 @@ This is main CSS file that contains custom style rules used in this template
 }
 .padding-large {
   padding-top: 7em;
-  padding-bottom: 7em;
 }
 .padding-xlarge {
   padding-top: 9.5em;
@@ -1075,7 +1074,7 @@ button {
 /*--- Pattern Overlay
 -----------------------------------------------*/
 .pattern-overlay {
-    background-image: url(images/pattern1.png);
+/*     background-image: url(images/pattern1.png); */
     background-repeat: no-repeat;
     background-position: top right;
 }
@@ -1186,8 +1185,8 @@ img.post-image {
     bottom: -100px;
 }
 .slick-dots li {
-    width: 10px;
-    height: 10px;
+    width: 47px;
+    height: 3px;
     background: #D7D5CC;
     color: #D7D5CC;
     border-radius: 50%;
@@ -1885,4 +1884,8 @@ footer#footer {
   .products-grid .product-style {
     width: 100%;
   }
+}
+
+#billboard{
+  background: url(img/bamboo-for-bg.jpg);
 }

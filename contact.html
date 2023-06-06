@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 	<html lang="en">
 	<head>
-		<title>Book Store</title>
+		<title>Bamboo Informations</title>
 		<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,13 +25,13 @@
 <body>
 
 
-<div id="header-wrap">
+<div id="header-wrap" style="position: fixed;z-index: 999;background: var(--light-color);width: 100%;">
 	
 	<div class="top-content">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<div class="social-links">
+					<!-- <div class="social-links">
 						<ul>
 							<li>
 								<a href="#"><i class="icon icon-facebook"></i></a>
@@ -46,13 +46,11 @@
 								<a href="#"><i class="icon icon-behance-square"></i></a>
 							</li>
 						</ul>
-					</div><!--social-links-->
+					</div> --><!--social-links-->
 				</div>
 				<div class="col-md-6">
 					<div class="right-element">
-						<a href="#" class="user-account for-buy"><i class="icon icon-user"></i><span>Account</span></a>
-						<a href="#" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart:(0 $)</span></a>
-
+						
 						<div class="action-menu">
 
 							<div class="search-bar">
@@ -65,6 +63,7 @@
 							</div>
 						</div>
 
+                        <a href="#" class="user-account for-buy"><i class="icon icon-user"></i><span>Account</span></a>
 					</div><!--top-right-->
 				</div>
 				
@@ -78,7 +77,7 @@
 
 				<div class="col-md-2">
 					<div class="main-logo">
-						<a href="index.html"><img src="images/main-logo.png" alt="logo"></a>
+						<a href="index.html"><img src="img/websitename.png" alt="logo" style="height: 2rem;"></a>
 					</div>
 
 				</div>
@@ -89,26 +88,17 @@
 						<div class="main-menu stellarnav">
 							<ul class="menu-list">
 								<li class="menu-item active"><a href="#home" data-effect="Home">Home</a></li>
-								<li class="menu-item"><a href="#about" class="nav-link" data-effect="About">About</a></li>
 								<li class="menu-item has-sub">
-									<a href="#pages" class="nav-link" data-effect="Pages">Pages</a>
-
+									<a href="#bamboo-finder" class="nav-link" data-effect="About">Bamboo Finder</a>
 									<ul>
-								        <li class="active"><a href="index.html">Home</a></li>
-								        <li><a href="about.html">About</a></li>
-								        <li><a href="styles.html">Styles</a></li>
-								        <li><a href="blog.html">Blog</a></li>
-								        <li><a href="single-post.html">Post Single</a></li>
-								        <li><a href="shop.html">Our Store</a></li>
-								        <li><a href="single-product.html">Product Single</a></li>
-								        <li><a href="contact.html">Contact</a></li>
-								        <li><a href="thank-you.html">Thank You</a></li>
-								     </ul>
-
+										<li class="active"><a href="bamboofinder.html">All</a></li>
+										<li><a href="#">Zamboanga Del Norte</a></li>
+										<li><a href="#">Zamboanga Sibugay</a></li>
+										<li><a href="#">Zamboanga Del Sur</a></li>
+									</ul>
 								</li>
-								<li class="menu-item"><a href="#popular-books" class="nav-link" data-effect="Shop">Shop</a></li>
-								<li class="menu-item"><a href="#latest-blog" class="nav-link" data-effect="Articles">Articles</a></li>
-								<li class="menu-item"><a href="#contact" class="nav-link" data-effect="Contact">Contact</a></li>
+								<li class="menu-item"><a href="#latest-blog" class="nav-link" data-effect="Articles">About Us</a></li>
+								<li class="menu-item"><a href="contact.html" class="nav-link" data-effect="Contact">Contacts</a></li>
 							</ul>
 
 							<div class="hamburger">
@@ -128,15 +118,11 @@
 		
 </div><!--header-wrap-->
 
-<section>
+<section style="top: 7rem;position: relative;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h1 class="page-title">Contact us</h1>
-				<div class="breadcrumbs">
-					<span class="item"><a href="index.html">Home /</a></span>
-					<span class="item">Contact us</span>
-				</div>
+				<h1>Contact us</h1>
 			</div>
 		</div>
 	</div>
@@ -162,10 +148,6 @@
 						<h3>Social Links</h3>
 						<div class="social-links flex-container">
 							<a href="#" class="icon icon-facebook"></a>
-							<a href="#" class="icon icon-twitter"></a>
-							<a href="#" class="icon icon-pinterest-p"></a>
-							<a href="#" class="icon icon-youtube"></a>
-							<a href="#" class="icon icon-linkedin"></a>
 						</div><!--social-links-->
 					</div><!--detail-->
 
@@ -196,7 +178,7 @@
 								    <span class="label-body">I agree all the <a href="#">terms and conditions</a></span>
 								</label>
 
-								<button type="submit" name="submit" class="btn btn-full btn-rounded">Submit</button>
+								<button type="submit" name="submit" class="button-primary" style="height: 42px!important;">Submit</button>
 							</div>
 						</div>
 					</form>
@@ -209,12 +191,6 @@
 	</div>
 </section>
 
-<section class="google-map">
-	<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://getasearch.com/fmovies"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div></div>
-</section>
-
-
-
 <footer id="footer">
 	<div class="container">
 		<div class="row">
@@ -223,7 +199,7 @@
 				
 				<div class="footer-item">
 					<div class="company-brand">
-						<img src="images/main-logo.png" alt="logo" class="footer-logo">
+						<img src="img/websitename.png" alt="logo" class="footer-logo">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis sed ptibus liberolectus nonet psryroin. Amet sed lorem posuere sit iaculis amet, ac urna. Adipiscing fames semper erat ac in suspendisse iaculis.</p>
 					</div>
 				</div>
@@ -263,16 +239,7 @@
 							<a href="#">Home</a>
 						</li>
 						<li class="menu-item">
-							<a href="#">Books</a>
-						</li>
-						<li class="menu-item">
-							<a href="#">Authors</a>
-						</li>
-						<li class="menu-item">
-							<a href="#">Subjects</a>
-						</li>
-						<li class="menu-item">
-							<a href="#">Advanced Search</a>
+							<a href="#">Bamboo List's</a>
 						</li>
 					</ul>
 				</div>
@@ -284,16 +251,19 @@
 					<h5>My account</h5>
 					<ul class="menu-list">
 						<li class="menu-item">
-							<a href="#">Sign In</a>
+							<a href="#">Log In</a>
 						</li>
 						<li class="menu-item">
-							<a href="#">View Cart</a>
+							<a href="#">Sign Up</a>
 						</li>
 						<li class="menu-item">
-							<a href="#">My Wishtlist</a>
+							<a href="#">Edit Profile</a>
 						</li>
 						<li class="menu-item">
-							<a href="#">Track My Order</a>
+							<a href="#">View Profile</a>
+						</li>
+						<li class="menu-item">
+							<a href="#">Change Password</a>
 						</li>
 					</ul>
 				</div>
@@ -336,7 +306,7 @@
 					<div class="row">
 
 						<div class="col-md-6">
-							<p>© 2022 All rights reserved. Free HTML Template by <a href="https://www.templatesjungle.com/" target="_blank">TemplatesJungle</a></p>
+							<p>© 2023 All rights reserved. by <a href="#" target="_blank">Jesrhylle Amarante</a></p>
 						</div>
 
 						<div class="col-md-6">
