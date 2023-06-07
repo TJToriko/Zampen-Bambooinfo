@@ -1340,9 +1340,9 @@ img.post-image {
     justify-content: center;
 }
 .main-slider .banner-content {
-    width: 35%;
+    width: auto;
     margin-top: 90px;
-    margin-right: 175px;
+    text-align: center;
 }
 .banner-content h2.banner-title {
     font-size: 4.5em;
