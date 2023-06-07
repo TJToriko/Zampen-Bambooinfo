@@ -1303,6 +1303,17 @@ img.post-image {
     margin-top: 20px;
     width: 100%;
   }
+  .tab-items{
+    text-align-last: center;
+  }
+  .billboard-add-css{
+    display: flow-root;
+    position: relative;
+    top: 12em;
+  }
+  #popular-books{
+    margin-top: 16em;
+  }
 }
 
 /* - Main Navigation
@@ -1743,8 +1754,8 @@ footer#footer {
     margin-right: 100px;
 }
 #footer .footer-item img.footer-logo {
-    margin-bottom: -10px;
-    margin-left: -85%;
+
+    margin-left: -6em;
 } 
 #footer .footer-item p {
     width: 80%; 
@@ -1900,9 +1911,6 @@ footer#footer {
 #billboard{
   background: url(img/bamboo-for-bg.jpg); 
   height: 50em;
-}
-.company-brand .logo-desc{
-  margin-left: -60%;
 }
 
 .item{
