@@ -80,8 +80,8 @@
     });
 
     $('.main-slider').slick({
-        autoplay: false,
-        autoplaySpeed: 4000,
+        autoplay: true,
+        autoplaySpeed: 3000,
         fade: true,
         dots: true,
         prevArrow: $('.prev'),
