@@ -87,25 +87,12 @@
         prevArrow: $('.prev'),
         nextArrow: $('.next'),
     }); 
-    var slidePosition = 0;
-    SlideShow();
-    
-    function SlideShow() {
-      var i;
-      var slides = document.getElementsByClassName("Containers");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slidePosition++;
-      if (slidePosition > slides.length) {slidePosition = 1}
-      slides[slidePosition-1].style.display = "block";
-      setTimeout(SlideShow, 2000); // Change image every 2 seconds
-    } 
+
     $('.product-grid').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: false,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 2000,
         dots: true,
         arrows: false,
         responsive: [
