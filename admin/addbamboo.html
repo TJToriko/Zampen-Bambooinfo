@@ -7,11 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link href="img/logo/logo.png" rel="icon">
-  <title>RuangAdmin - Form Basics</title>
+  <link href="" rel="icon">
+  <title>Zampen - Add Bamboo</title>
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="css/ruang-admin.min.css" rel="stylesheet">
+
+    <!-- Select2 -->
+    <link href="vendor/select2/dist/css/select2.min.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap DatePicker -->  
+    <link href="vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet" >
+    <!-- Bootstrap Touchspin -->
+    <link href="vendor/bootstrap-touchspin/css/jquery.bootstrap-touchspin.css" rel="stylesheet" >
+    <!-- ClockPicker -->
+    <link href="vendor/clock-picker/clockpicker.css" rel="stylesheet">
+    <!-- RuangAdmin CSS -->
+    <link href="css/ruang-admin.min.css" rel="stylesheet">
+
 </head>
 
 <body id="page-top">
@@ -20,7 +31,7 @@
     <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
         <div class="sidebar-brand-icon">
-          <img src="img/logo/logo2.png">
+          <img src="#" alt="logo">
         </div>
         <div class="sidebar-brand-text mx-3">Zampen</div>
       </a>
@@ -78,6 +89,7 @@
           <span>UI Colors</span>
         </a>
       </li>
+      <div class="version" id="version-ruangadmin"></div>
     </ul>
     <!-- Sidebar -->
     <div id="content-wrapper" class="d-flex flex-column">
@@ -220,43 +232,102 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Local Name</label>
-                        <input type="text" class="form-control" id="localname" placeholder="Enter Local Name">
+                        <label for="inputlocalname">Local Name</label>
+                        <input type="text" class="form-control" id="inputlocalname" placeholder="Enter Local Name">
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Scientific Name</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      <label for="inputsciname">Scientific Name</label>
+                      <input type="text" class="form-control" id="inputsciname" aria-describedby="emailHelp"
                         placeholder="Enter Scientific Name">
                       <small id="emailHelp" class="form-text text-muted text-danger">Leave it blank if doesn't have.</small>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Street</label>
-                      <input type="text" class="form-control" id="localname" placeholder="Enter Street">
                     </div>
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label for="exampleInputPassword1">City</label>
-                          <input type="text" class="form-control" id="localname" placeholder="Enter City">
+                          <label for="select2SinglePlaceholder1">City</label>
+                          <select class="select2-single-placeholder2 form-control" name="state" id="select2SinglePlaceholder1">
+                            <option value="Aceh">Aceh</option>
+                            <option value="Sumatra Utara">Sumatra Utara</option>
+                            <option value="Sumatra Barat">Sumatra Barat</option>
+                            <option value="Riau">Riau</option>
+                            <option value="Kepulauan Riau">Kepulauan Riau</option>
+                            <option value="Jambi">Jambi</option>
+                            <option value="Bengkulu">Bengkulu</option>
+                            <option value="Sumatra Selatan">Sumatra Selatan</option>
+                            <option value="Kepulauan Bangka Belitung">Kepulauan Bangka Belitung</option>
+                            <option value="Lampung">Lampung</option>
+                            <option value="Banten">Banten</option>
+                            <option value="Jawa Barat">Jawa Barat</option>
+                            <option value="Jakarta">Jakarta</option>
+                            <option value="Jawa Tengah">Jawa Tengah</option>
+                            <option value="Yogyakarta">Yogyakarta</option>
+                            <option value="Jawa TImur">Jawa Timur</option>
+                            <option value="Bali">Bali</option>
+                            <option value="Nusa Tenggara Barat">Nusa Tenggara Barat</option>
+                            <option value="Nusa Tenggara Timur">Nusa Tenggara Timur</option>
+                            <option value="Kalimantan Barat">Kalimantan Barat</option>
+                            <option value="Kalimantan Selatan">Kalimantan Selatan</option>
+                            <option value="Kalimantan Tengah">Kalimantan Tengah</option>
+                            <option value="Kalimantan Timur">Kalimantan Timur</option>
+                            <option value="Kalimantan Utara">Kalimantan Utara</option>
+                            <option value="Gorontalo">Gorontalo</option>
+                            <option value="Sulawaesi Barat">Sulawesi Barat</option>
+                            <option value="Sulawesi Selatan">Sulawesi Selatan</option>
+                            <option value="Sulawesi Tengah">Sulawesi Tengah</option>
+                            <option value="Sulawesi Tenggara">Sulawesi Tenggara</option>
+                            <option value="Sulawesi Utara">Sulawesi Utara</option>
+                            <option value="Maluku">Maluku</option>
+                            <option value="Maluku Utara">Maluku Utara</option>
+                            <option value="Papua Barat">Papua Barat</option>
+                            <option value="Papua">Papua</option>
+                          </select>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label for="exampleFormControlSelect1">Province</label>
-                          <select class="form-control" id="">
-                            <option>--Select Province--</option>
-                            <option>Zamboanga Del Sur</option>
-                            <option>Zamboanga Sibugay</option>
-                            <option>Zamboanga Del Norte</option>
+                          <label for="select2SinglePlaceholder">Province</label>
+                          <select class="select2-single-placeholder form-control" name="state" id="select2SinglePlaceholder">
+                            <option value="Zamboanga Del Sur">Zamboanga Del Sur</option>
+                            <option value="Zamboanga Sibugaya">Zamboanga Sibugay</option>
+                            <option value="Zamboanga Del Norte">Zamboanga Del Norte</option>
                           </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputstreet">Street</label>
+                      <input type="text" class="form-control" id="inputstreet" placeholder="Enter Street">
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="inputlongitude">Longitude</label>
+                          <input type="text" class="form-control" id="inputlongitude" placeholder="Enter Longitude">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="inputlatitude">Latitude</label>
+                          <input type="text" class="form-control" id="inputlatitude" placeholder="Enter Latitude">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row" style="text-align: -webkit-center;">
+                      <div class="col-lg-12 mb-4">
+                        <div class="card text-black text-center" style="width: auto;height: 400px;">
                         </div>
                       </div>
                     </div>
                     <div class="form-group">
                        <div class="row">
                             <div class="col-md-8">
-                                <label for="exampleInputPassword1">Bamboo Shoot Price: </label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Bamboo Shoot Price">
+                              <label for="basic-url">Bamboo Shoot Price</label>
+                                <div class="input-group mb-3">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon3">₱</span>
+                                  </div>
+                                  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Enter Bamboo Shoot Price">
+                                </div>
                             </div>
                             <div class="col-md-4" style="margin-top: 2.5em;">
                                 <div class="custom-control custom-checkbox">
@@ -269,27 +340,62 @@
                     <div class="form-group">
                         <div class="row">
                              <div class="col-md-8">
-                                 <label for="exampleInputPassword1">Bamboo Clump Price: </label>
-                                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Bamboo Clump Price">
+                              <label for="basic-url">Bamboo Clump Price</label>
+                              <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="basic-addon3">₱</span>
+                                </div>
+                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Enter Bamboo Clump Price">
+                              </div>
                              </div>
                              <div class="col-md-4" style="margin-top: 2.5em;">
                                  <div class="custom-control custom-checkbox">
-                                     <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                     <label class="custom-control-label" for="customCheck1">For Sale</label>
+                                     <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                     <label class="custom-control-label" for="customCheck2">For Sale</label>
                                  </div>
                              </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect2">Uses of the Bamboo</label>
-                        <button type="button" class="btn btn-success float-right text-align-last" data-toggle="modal" data-target="#exampleModalCenter"
-                        id="#modalCenter">Add Use</button>
-                        <select multiple class="form-control" id="exampleFormControlSelect2" style="margin-top: 10px;">
-                          <option>Privacy Screening</option>
-                          <option>Hedging</option>
-                          <option>Ornamental / Feature</option>
-                        </select>
-                        <small id="emailHelp" class="form-text text-muted text-danger">Hold Ctrl for Multiple Selection.</small>
+                      <label for="select2Multiple">Multiple-Select Boxes (pillbox)</label>
+                      <select class="select2-multiple form-control" name="states[]" multiple="multiple"
+                        id="select2Multiple">
+                        <option value="">Select</option>
+                        <option value="Aceh">Aceh</option>
+                        <option value="Sumatra Utara">Sumatra Utara</option>
+                        <option value="Sumatra Barat">Sumatra Barat</option>
+                        <option value="Riau">Riau</option>
+                        <option value="Kepulauan Riau" selected>Kepulauan Riau</option>
+                        <option value="Jambi">Jambi</option>
+                        <option value="Bengkulu">Bengkulu</option>
+                        <option value="Sumatra Selatan">Sumatra Selatan</option>
+                        <option value="Kepulauan Bangka Belitung">Kepulauan Bangka Belitung</option>
+                        <option value="Lampung">Lampung</option>
+                        <option value="Banten">Banten</option>
+                        <option value="Jawa Barat" selected>Jawa Barat</option>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="Jawa Tengah">Jawa Tengah</option>
+                        <option value="Yogyakarta">Yogyakarta</option>
+                        <option value="Jawa TImur">Jawa Timur</option>
+                        <option value="Bali">Bali</option>
+                        <option value="Nusa Tenggara Barat">Nusa Tenggara Barat</option>
+                        <option value="Nusa Tenggara Timur">Nusa Tenggara Timur</option>
+                        <option value="Kalimantan Barat">Kalimantan Barat</option>
+                        <option value="Kalimantan Selatan">Kalimantan Selatan</option>
+                        <option value="Kalimantan Tengah">Kalimantan Tengah</option>
+                        <option value="Kalimantan Timur">Kalimantan Timur</option>
+                        <option value="Kalimantan Utara">Kalimantan Utara</option>
+                        <option value="Gorontalo">Gorontalo</option>
+                        <option value="Sulawaesi Barat">Sulawesi Barat</option>
+                        <option value="Sulawesi Selatan">Sulawesi Selatan</option>
+                        <option value="Sulawesi Tengah">Sulawesi Tengah</option>
+                        <option value="Sulawesi Tenggara">Sulawesi Tenggara</option>
+                        <option value="Sulawesi Utara">Sulawesi Utara</option>
+                        <option value="Maluku">Maluku</option>
+                        <option value="Maluku Utara">Maluku Utara</option>
+                        <option value="Papua Barat">Papua Barat</option>
+                        <option value="Papua">Papua</option>
+                      </select>
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Bamboo Description</label>
@@ -301,7 +407,50 @@
               </div>
 
             </div>
-
+            <div class="col-lg-6">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <form>
+                    <div class="row" style="text-align: -webkit-center;">
+                      <div class="col-lg-12 mb-4">
+                        <div class="card text-black text-center" style="width: 200px;height: 200px;">
+                          <img src="img/man.png" alt="Image preview">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="customFile">
+                          <label class="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputproductname">Product Name</label>
+                        <input type="text" class="form-control" id="inputproductname" placeholder="Enter Product Name">
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                              <label for="basic-url">Bamboo Product Price</label>
+                                <div class="input-group mb-3">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon3">₱</span>
+                                  </div>
+                                  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Enter Bamboo Product Price">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <button href="#" class="btn btn-success btn-icon-split">
+                <span class="icon text-white-50">
+                  <i class="fas fa-plus"></i>
+                </span>
+                <span class="text">Add Bamboo Product</span>
+              </button>
+            </div>
         </div>
         <!---Container Fluid-->
       </div>
@@ -338,7 +487,7 @@
      </div>
      <div class="modal-footer">
        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
-       <button type="button" class="btn btn-primary">Add</button>
+       <button type="button" class="btn btn-success">Add</button>
      </div>
    </div>
  </div>
@@ -352,8 +501,121 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Select2 -->
+  <script src="vendor/select2/dist/js/select2.min.js"></script>
+  <!-- Bootstrap Datepicker -->
+  <script src="vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+  <!-- Bootstrap Touchspin -->
+  <script src="vendor/bootstrap-touchspin/js/jquery.bootstrap-touchspin.js"></script>
+  <!-- ClockPicker -->
+  <script src="vendor/clock-picker/clockpicker.js"></script>
+  <!-- RuangAdmin Javascript -->
   <script src="js/ruang-admin.min.js"></script>
 
+    <!-- Javascript for this page -->
+    <script>
+      $(document).ready(function () {
+  
+  
+        $('.select2-single').select2();
+  
+        // Select2 Single  with Placeholder
+        $('.select2-single-placeholder').select2({
+          placeholder: "Select a Province",
+          allowClear: true
+        });      
+  
+        // Select2 Single  with Placeholder
+        $('.select2-single-placeholder2').select2({
+          placeholder: "Select a City",
+          allowClear: true
+        });    
+        // Select2 Multiple
+        $('.select2-multiple').select2();
+  
+        // Bootstrap Date Picker
+        $('#simple-date1 .input-group.date').datepicker({
+          format: 'dd/mm/yyyy',
+          todayBtn: 'linked',
+          todayHighlight: true,
+          autoclose: true,        
+        });
+  
+        $('#simple-date2 .input-group.date').datepicker({
+          startView: 1,
+          format: 'dd/mm/yyyy',        
+          autoclose: true,     
+          todayHighlight: true,   
+          todayBtn: 'linked',
+        });
+  
+        $('#simple-date3 .input-group.date').datepicker({
+          startView: 2,
+          format: 'dd/mm/yyyy',        
+          autoclose: true,     
+          todayHighlight: true,   
+          todayBtn: 'linked',
+        });
+  
+        $('#simple-date4 .input-daterange').datepicker({        
+          format: 'dd/mm/yyyy',        
+          autoclose: true,     
+          todayHighlight: true,   
+          todayBtn: 'linked',
+        });    
+  
+        // TouchSpin
+  
+        $('#touchSpin1').TouchSpin({
+          min: 0,
+          max: 100,                
+          boostat: 5,
+          maxboostedstep: 10,        
+          initval: 0
+        });
+  
+        $('#touchSpin2').TouchSpin({
+          min:0,
+          max: 100,
+          decimals: 2,
+          step: 0.1,
+          postfix: '%',
+          initval: 0,
+          boostat: 5,
+          maxboostedstep: 10
+        });
+  
+        $('#touchSpin3').TouchSpin({
+          min: 0,
+          max: 100,
+          initval: 0,
+          boostat: 5,
+          maxboostedstep: 10,
+          verticalbuttons: true,
+        });
+  
+        $('#clockPicker1').clockpicker({
+          donetext: 'Done'
+        });
+  
+        $('#clockPicker2').clockpicker({
+          autoclose: true
+        });
+  
+        let input = $('#clockPicker3').clockpicker({
+          autoclose: true,
+          'default': 'now',
+          placement: 'top',
+          align: 'left',
+        });
+  
+        $('#check-minutes').click(function(e){        
+          e.stopPropagation();
+          input.clockpicker('show').clockpicker('toggleView', 'minutes');
+        });
+  
+      });
+    </script>
 </body>
 
 </html>
