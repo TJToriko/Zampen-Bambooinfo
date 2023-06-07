@@ -14,7 +14,6 @@ Version: 1.1
 /** 1. VARIABLES
 --------------------------------------------------------------*/
 
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
 
 
 :root {
@@ -1750,9 +1749,8 @@ span.prev-price {
 /*----- Footer Section
 --------------------------------------------------------------*/
 footer#footer {
-    padding-bottom: 80px;
     margin-top: 100px;
-    margin-bottom: 60px;
+    margin-bottom: auto;
     border-bottom: 1px solid #E0E0E0;
 }
 #footer .footer-item {
@@ -1911,4 +1909,24 @@ footer#footer {
 
 #billboard{
   background: url(img/bamboo-for-bg.jpg);
+}
+
+.fa-facebook{
+color: blue;
+}
+
+.fa-twitter:before{
+  color:#00acee; 
+}
+
+.fa-youtube:before{
+  color:#FF0000;
+}
+
+.fa-google:before{
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
