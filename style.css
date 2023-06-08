@@ -1135,10 +1135,17 @@ button {
     align-items: center;
 }
 .section-header .section-title:before {
-    left: 3px;
+    left: 90px; 
+    border: thin;
+    border-style: solid;
+    border-color: red;
 }
 .section-header .section-title:after {
-    right: 3px;
+    right: 90px;
+    border: thin;
+    border-style: solid;
+    border-color: red;
+
 }
 .section-header .title span {
     font-size: 14px;
