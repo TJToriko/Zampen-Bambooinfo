@@ -1331,6 +1331,8 @@ img.post-image {
 ------------------------------------------------------------- */
 #header {
   padding: 16px 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
 }
 #header .menu-list a {
   text-transform: uppercase;
@@ -1871,17 +1873,17 @@ footer#footer {
 .product-style-finder figcaption>h3 {
   font-size: 1.4em;
   font-weight: 500;
-  color: #74642F;
+  color: black;
   margin: 0;
 }
 
 .product-style-finder .item-price {
-  color: #74642F;
+  color: indianred;
   font-size: 1.3em;
 }
 
 .product-detail .item-price {
-  color: #74642F;
+  color: indianred;
   font-size: 1.3em;
 }
 .product-style figcaption>h3 {
@@ -1924,15 +1926,15 @@ footer#footer {
 color: blue;
 }
 
-.fa-twitter:before{
+.fa-twitter{
   color:#00acee; 
 }
 
-.fa-youtube:before{
+.fa-youtube{
   color:#FF0000;
 }
 
-.fa-google:before{
+.fa-google{
   background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
   -webkit-background-clip: text;
   background-clip: text;
