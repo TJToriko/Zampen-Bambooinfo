@@ -50,7 +50,7 @@
         <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Bamboo Management</h6>
-            <a class="collapse-item" href="#">Bamboo List's</a>
+            <a class="collapse-item" href="bamboolist.html">Bamboo List's</a>
             <a class="collapse-item" href="#">Bamboo Archived</a>
           </div>
         </div>
@@ -69,7 +69,7 @@
           </div>
         </div>
       </li>
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="accounts.html">
           <i class="fas fa-fw fa-user"></i>
           <span>Accounts</span>
@@ -106,30 +106,30 @@
               </div>
             </li>
             <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-bell fa-fw"></i>
-                <span class="badge badge-danger badge-counter">3+</span>
-              </a>
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                aria-labelledby="alertsDropdown">
-                <h6 class="dropdown-header">
-                  Notifications
-                </h6>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div>
-                    <div class="small text-gray-500">June 6, 2023</div>
-                    <span class="font-weight-bold">TJ added a bamboo (not seen)</span>
-                  </div>
+                <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-bell fa-fw"></i>
+                  <span class="badge badge-danger badge-counter">3+</span>
                 </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div>
-                    <div class="small text-gray-500">June 6, 2023</div>
-                    <span>TJ added a bamboo (seened)</span>
-                  </div>
-                </a>
-                <!-- <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a> -->
-              </div>
+                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                  aria-labelledby="alertsDropdown">
+                  <h6 class="dropdown-header">
+                    Notifications
+                  </h6>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div>
+                      <div class="small text-gray-500">June 6, 2023</div>
+                      <span class="font-weight-bold">TJ added a bamboo (not seen)</span>
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div>
+                      <div class="small text-gray-500">June 6, 2023</div>
+                      <span>TJ added a bamboo (seened)</span>
+                    </div>
+                  </a>
+                  <!-- <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a> -->
+                </div>
             </li>
             <div class="topbar-divider d-none d-sm-block"></div>
             <li class="nav-item dropdown no-arrow">
@@ -170,10 +170,11 @@
         <!-- Container Fluid-->
         <div class="container-fluid" id="container-wrapper">
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Profile</h1>
+            <h1 class="h3 mb-0 text-gray-800">Create Account</h1>
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Profile</li>
+              <li class="breadcrumb-item"><a href="accounts.html">Accounts</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Create Account</li>
             </ol>
           </div>
 
@@ -193,37 +194,63 @@
                         </div>
                       </div>
                     </div>
+                    <div class="form-group">
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="customFile">
+                          <label class="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="inputfirstname">First Name</label>
-                                <input type="text" class="form-control" id="inputfirstname" placeholder="TJ" readonly>
+                                <label for="inputfirstname">First Name *</label>
+                                <input type="text" class="form-control" id="inputfirstname" placeholder="Enter First Name" >
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="inputmiddlename">Middle Name</label>
-                                <input type="text" class="form-control" id="inputmiddlename" placeholder="" readonly>
+                                <input type="text" class="form-control" id="inputmiddlename" placeholder="Enter Middle Name">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="inputlastname">Last Name</label>
-                                <input type="text" class="form-control" id="inputlastname" placeholder="Torrico" readonly>
+                                <label for="inputlastname">Last Name *</label>
+                                <input type="text" class="form-control" id="inputlastname" placeholder="Enter Last Name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="inputemailname">Email</label>
+                                <input type="email" class="form-control" id="inputemailname" placeholder="Enter Email">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="inputcontactname">Contact Number</label>
+                                <input type="text" class="form-control" id="inputcontactname" placeholder="Enter Contact Number">
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="inputemailname">Email</label>
-                        <input type="email" class="form-control" id="inputemailname" placeholder="torricotj@gmail.com" readonly>
+                        <label for="inputusername">Username *</label>
+                        <input type="text" class="form-control" id="inputusername" placeholder="Enter Username">
                     </div>
-                    <div class="form-group">
-                        <label for="inputcontactname">Contact Number</label>
-                        <input type="text" class="form-control" id="inputcontactname" placeholder="09663261147" readonly>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputusername">Username</label>
-                        <input type="text" class="form-control" id="inputusername" placeholder="TJToriko" readonly>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="inputpassword">Password *</label>
+                                <input type="text" class="form-control" id="inputpassword" placeholder="Enter Password">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="inputconfirmpassword">Confirm Password *</label>
+                                <input type="text" class="form-control" id="inputconfirmpassword" placeholder="Enter Confirm Password">
+                            </div>
+                        </div>
                     </div>
                     <button type="submit" class="btn float-right btn-primary">Edit Profile</button>
                   </form>
