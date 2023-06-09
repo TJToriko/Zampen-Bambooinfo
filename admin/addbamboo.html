@@ -376,7 +376,7 @@
               <div class="card mb-4">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                   <h6 class="m-0 font-weight-bold text-primary">Bamboo Product</h6>
-                  <a href="addbamboo.html" class="btn btn-success mb-1">Add Bamboo Product</a>
+                  <button type="button" class="btn btn-success mb-1" data-toggle="modal" data-target="#modaladdproduct" id="#modalCenter">Add Bamboo Product</button>
                 </div>
                 <div class="table-responsive p-3">
                   <table class="table align-items-center table-flush table-hover" id="dataTableHover">
@@ -399,7 +399,7 @@
                             <td>Acidosasa chienouensis</td>
                             <td>1000</td>
                             <td style="font-size: 20px;">
-                              <a href=""><i class="fas fa-eye"></i></a>
+                              <a type="button" data-toggle="modal" data-target="#modalviewproduct"><i class="fas fa-eye"></i></a>
                               <a href=""><i class="fas fa-pen"></i></a>
                               <a href=""><i class="fas fa-trash"></i></a>
                             </td>
@@ -464,6 +464,85 @@
      <div class="modal-footer">
        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
        <button type="button" class="btn btn-success">Add</button>
+     </div>
+   </div>
+ </div>
+</div>
+ <!-- Modal product -->
+<div class="modal fade" id="modaladdproduct" tabindex="-1" role="dialog"
+ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+ <div class="modal-dialog modal-dialog-centered" role="document">
+   <div class="modal-content">
+     <div class="modal-header">
+       <h5 class="modal-title" id="exampleModalCenterTitle">Add Bamboo Product</h5>
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+       </button>
+     </div>
+     <div class="modal-body">
+        <div class="row" style="text-align: -webkit-center;">
+          <div class="col-lg-12 mb-4">
+            <div class="card text-black text-center" style="width: 150px;height: 150px;">
+              <img src="img/man.png" alt="Image preview">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="customFile">
+              <label class="custom-file-label" for="customFile">Choose file</label>
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="modaladdproducts">Product Name</label>
+          <input type="text" class="form-control" id="modaladdproducts" placeholder="Enter Bamboo Use">
+        </div>
+        <div class="form-group">
+          <label for="basic-url">Product Price</label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon3">₱</span>
+            </div>
+            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Enter Product Price">
+          </div>
+        </div>
+     </div>
+     <div class="modal-footer">
+       <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+       <button type="button" class="btn btn-success">Add Product</button>
+     </div>
+   </div>
+ </div>
+</div>
+
+ <!-- Modal View product -->
+ <div class="modal fade" id="modalviewproduct" tabindex="-1" role="dialog"
+ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+ <div class="modal-dialog modal-dialog-centered" role="document">
+   <div class="modal-content">
+     <div class="modal-header">
+       <h5 class="modal-title" id="exampleModalCenterTitle">View Modal</h5>
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+       </button>
+     </div>
+     <div class="modal-body">
+        <div class="row" style="text-align: -webkit-center;">
+          <div class="col-lg-12 mb-4">
+            <div class="card text-black text-center" style="width: 150px;height: 150px;">
+              <img src="img/man.png" alt="Image preview">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="modaladdproducts">Product Name: </label>
+        </div>
+        <div class="form-group">
+          <label for="basic-url">Product Price: ₱1000</label>
+        </div>
+     </div>
+     <div class="modal-footer">
+       <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
      </div>
    </div>
  </div>
