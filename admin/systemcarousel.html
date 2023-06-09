@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link href="" rel="icon">
-  <title>Zampen - Dashboard</title>
+  <title>Zampen - Carousel</title>
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="css/ruang-admin.min.css" rel="stylesheet">
@@ -21,16 +21,15 @@
     <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
         <div class="sidebar-brand-icon">
-          <img src="" alt="logo">
+          <img src="" alt="Logo">
         </div>
         <div class="sidebar-brand-text mx-3">Zampen</div>
       </a>
       <hr class="sidebar-divider my-0">
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span>
-        </a>
+          <span>Dashboard</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
@@ -41,22 +40,22 @@
         <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Bamboo Management</h6>
-            <a class="collapse-item" href="bamboolist.html">Bamboo List's</a>
+            <a class="collapse-item active" href="#">Bamboo List's</a>
             <a class="collapse-item" href="bambooarchived.html">Bamboo Archived</a>
           </div>
         </div>
       </li>
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm" aria-expanded="true"
           aria-controls="collapseForm">
           <i class="fab fa-fw fa-wpforms"></i>
           <span>System Management</span>
         </a>
-        <div id="collapseForm" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+        <div id="collapseForm" class="collapse show" aria-labelledby="headingForm" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">System Management</h6>
-            <a class="collapse-item" href="systemcarousel.html">Carousel</a>
-            <a class="collapse-item" href="systemlogo.html">Logo</a>
+            <a class="collapse-item active" href="#">Carousel</a>
+            <a class="collapse-item" href="#">Logo</a>
           </div>
         </div>
       </li>
@@ -159,148 +158,74 @@
         <!-- Container Fluid-->
         <div class="container-fluid" id="container-wrapper">
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+            <h1 class="h3 mb-0 text-gray-800">Carousel</h1>
             <ol class="breadcrumb">
-              <li class="breadcrumb-item">Home</li>
-              <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item">System Management</li>
+              <li class="breadcrumb-item active" aria-current="page">Carousel</li>
             </ol>
           </div>
 
-          <div class="row mb-3">
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="row align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">Zamboanga Peninsula Total Bamboo's</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">2000</div>
-<!--                       <div class="mt-2 mb-0 text-muted text-xs">
-                        <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
-                        <span>Since last month</span>
-                      </div> -->
-                    </div>
-                    <div class="col-auto">
-                      <i class=""><img src="img/bamboo-icon.png" alt="bamboo icon"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Earnings (Annual) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">Zamboanga Del Norte Total Bamboo's</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">650</div>
-<!--                       <div class="mt-2 mb-0 text-muted text-xs">
-                        <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 12%</span>
-                        <span>Since last years</span>
-                      </div> -->
-                    </div>
-                    <div class="col-auto">
-                      <i class=""><img src="img/bamboo-icon.png" alt=""></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- New User Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">Zamboanga Sibugay Total Bamboo's</div>
-                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">366</div>
-<!--                       <div class="mt-2 mb-0 text-muted text-xs">
-                        <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 20.4%</span>
-                        <span>Since last month</span>
-                      </div> -->
-                    </div>
-                    <div class="col-auto">
-                      <i class=""><img src="img/bamboo-icon.png" alt=""></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Pending Requests Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">Zamboanga Del Sur Total Bamboo's</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
-<!--                       <div class="mt-2 mb-0 text-muted text-xs">
-                        <span class="text-danger mr-2"><i class="fas fa-arrow-down"></i> 1.10%</span>
-                        <span>Since yesterday</span>
-                      </div> -->
-                    </div>
-                    <div class="col-auto">
-                      <i class=""><img src="img/bamboo-icon.png" alt=""></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <!-- Row -->
+          <div class="row">
+            <!-- DataTable with Hover -->
+            <div class="col-lg-12">
+              <div class="card mb-4" style="width: auto;height: 400px;">
 
-            <!-- Invoice Example -->
-            <div class="col-xl-12 col-lg-12 mb-4">
-              <div class="card">
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Recently Added Bamboo's</h6>
-                  <a class="m-0 float-right btn btn-danger btn-sm" href="#">View More <i
-                      class="fas fa-chevron-right"></i></a>
-                </div>
-                <div class="table-responsive">
-                  <table class="table align-items-center table-flush">
-                    <thead class="thead-light">
-                      <tr>
-                        <th>Name</th>
-                        <th>Location</th>
-                        <th>Province</th>
-                        <th>Date Added</th>
-                        <th>Action</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><a href="#">Powdery sour bamboo</a></td>
-                        <td>Lunzuran Zamboanga City</td>
-                        <td>Zamboanga Del Sur</td>
-                        <td>June 06, 2023 10:09 AM</td>
-                        <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">Powdery sour bamboo</a></td>
-                        <td>Lunzuran Zamboanga City</td>
-                        <td>Zamboanga Del Sur</td>
-                        <td>June 06, 2023 10:09 AM</td>
-                        <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">Powdery sour bamboo</a></td>
-                        <td>Lunzuran Zamboanga City</td>
-                        <td>Zamboanga Del Sur</td>
-                        <td>June 06, 2023 10:09 AM</td>
-                        <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">Powdery sour bamboo</a></td>
-                        <td>Lunzuran Zamboanga City</td>
-                        <td>Zamboanga Del Sur</td>
-                        <td>June 06, 2023 10:09 AM</td>
-                        <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="card-footer"></div>
               </div>
+            </div>
+          </div>
+          <!--Row-->
+
+          <!-- Row -->
+          <div class="row">
+            <!-- DataTable with Hover -->
+            <div class="col-lg-12">
+                <div class="card mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Carousel</h6>
+                    <button type="button" class="btn btn-success mb-1" data-toggle="modal" data-target="#exampleModalCenter"
+                    id="#modalCenter">Add Carousel</button>
+                </div>
+                <div class="table-responsive p-3">
+                    <table class="table align-items-center table-flush table-hover" id="dataTableHover">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Action</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>Powdery sour bamboo</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sapiente facere ex? Culpa impedit voluptates, dolor laudantium, corporis deleniti voluptate sint iure inventore rerum distinctio! Ratione excepturi facilis quo deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sint ducimus mollitia provident eaque nisi dolorum explicabo doloremque, fugit optio nemo odit vitae hic, magnam unde fugiat qui tempora ipsum.</td>
+                            <td style="font-size: 20px;">
+                                <a href=""><i class="fas fa-eye"></i></a>
+                                <a href=""><i class="fas fa-pen"></i></a>
+                                <a href=""><i class="fas fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Powdery sour bamboo</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sapiente facere ex? Culpa impedit voluptates, dolor laudantium, corporis deleniti voluptate sint iure inventore rerum distinctio! Ratione excepturi facilis quo deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sint ducimus mollitia provident eaque nisi dolorum explicabo doloremque, fugit optio nemo odit vitae hic, magnam unde fugiat qui tempora ipsum.</td>
+                            <td style="font-size: 20px;">
+                                <a href=""><i class="fas fa-eye"></i></a>
+                                <a href=""><i class="fas fa-pen"></i></a>
+                                <a href=""><i class="fas fa-trash"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+                </div>
             </div>
           </div>
           <!--Row-->
@@ -323,6 +248,50 @@
     </div>
   </div>
 
+
+    <!-- Modal Center -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Add Carousel</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="row" style="text-align: -webkit-center;">
+                <div class="col-lg-12 mb-4">
+                  <div class="card text-black text-center">
+                    <img src="../img/zampen.png" alt="Image preview">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                  </div>
+              </div>
+              <div class="form-group">
+                <label for="inputlocalname">Title</label>
+                <input type="text" class="form-control" id="inputlocalname" placeholder="Enter Title">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Logo Description</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+              </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Scroll to top -->
   <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
