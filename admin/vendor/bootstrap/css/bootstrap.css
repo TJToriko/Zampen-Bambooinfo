@@ -11694,3 +11694,7 @@ a.text-dark:focus {
     border-color: #e3e6f0;
   }
 }
+
+.fa-trash{
+  color: red !important;
+}
