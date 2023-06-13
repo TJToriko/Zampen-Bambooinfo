@@ -1355,7 +1355,7 @@ section {
 .breadcrumbs {
   padding: 15px 0;
   background: #fbfbfb;
-  min-height: 40px;
+  
 }
 
 @media (max-width: 992px) {
